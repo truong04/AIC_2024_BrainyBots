@@ -1,0 +1,13 @@
+version: '3'
+services:
+  elasticsearch:
+    image: elasticsearch:8.15.0
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - ES_JAVA_OPTS=-Xms8192m -Xmx8192m
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+

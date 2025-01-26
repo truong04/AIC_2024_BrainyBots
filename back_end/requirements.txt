@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pydantic
+elasticsearch[async]
+git+https://github.com/StarkBotsIndustries/googletrans.git
+tqdm
+numpy
+openai==1.51.2
+timm==1.0.9
